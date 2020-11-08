@@ -7,7 +7,7 @@ $greyDown: #F5F5F5;
 $black: #000000;
 $hoverColor: #37474f;
 
-//Breakpoint from bootstrap : 576, 768, 992, 1200
+//Breakpoints from bootstrap : 576, 768, 992, 1200
 //mobile
 body {
    background-color: $greyUp;
@@ -19,6 +19,11 @@ body {
 }
 
 a {
+   text-decoration: none;
+   color: $white;
+}
+
+a:hover {
    text-decoration: none;
    color: $white;
 }
@@ -152,13 +157,7 @@ footer {
 //tablet
 @media screen and (min-width: 768px) {
 
-   a {
-      text-decoration: none;
-      color: $white;
-   }
-
    header {
-      display: flex;
       flex-direction: row;
       justify-content: space-between;
       padding: 10px;
@@ -173,54 +172,16 @@ footer {
          height: 80px;
          line-height: 80px;
       }
-
-      li {
-         width: 100%;
-         text-align: center;
-         text-decoration: none;
-         list-style: none;
-         padding-top: 2%;
-         padding-bottom: 2%;
-
-         a {
-            text-decoration: none;
-            color: $hoverColor;
-         }
-      }
-
-      li:hover {
-         background-color: $hoverColor;
-
-         a {
-            text-decoration: none;
-            color: $white;
-         }
-      }
    }
 
    .region-top {
-      display: flex;
-      flex-direction: column;
-
-      .title_article {
-         margin: 3%;
-      }
-
-      .tags {
-         color: $white;
-         font-weight: lighter;
-         font-size: 14px;
-         margin-left: 3%;
-      }
 
       .article-left {
-         color: $white;
          position: relative;
 
          div {
             background-color: $orange;
             width: 50%;
-            padding: 3%;
             position: absolute;
             bottom: 50px;
             left: 50px;
@@ -228,75 +189,29 @@ footer {
       }
 
       .article-right {
-         display: flex;
          flex-direction: row;
 
          .article-right-1 {
-            background-color: $red;
             width: 50%;
          }
 
          .article-right-2 {
-            background-color: $blue;
             width: 50%;
          }
       }
    }
 
    .region-main {
-      background-color: $greyUp;
-      display: flex;
-      flex-direction: column;
       padding: 5% 20% 5% 20%;
-
-      div {
-         padding: 3%;
-      }
    }
 
    .region-sidebar {
-      display: flex;
-      flex-direction: column;
       padding: 5% 20% 5% 20%;
-      background-color: $greyDown;
-
-      form {
-         display: flex;
-         flex-direction: column;
-
-         label {
-            margin: 1%;
-         }
-
-         input {
-            margin: 1%;
-         }
-
-         input[type=submit] {
-            background-color: $blue;
-            border-radius: 2px;
-            border: 1px solid transparent;
-            color: $white;
-            width: 100px;
-            margin: 5% auto;
-            padding: 5px;
-         }
-      }
-   }
-
-   footer {
-      height: 50px;
-      background-color: $black;
    }
 }
 
 //desktop
 @media screen and (min-width: 992px) {
-
-   a {
-      text-decoration: none;
-      color: $white;
-   }
 
    header {
       display: flex;
