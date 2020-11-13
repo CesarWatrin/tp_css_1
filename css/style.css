@@ -1,42 +1,34 @@
-@charset "UTF-8";
-/* line 12, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 body {
   background-color: #E0E0E0;
 }
 
-/* line 16, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .container {
   margin: 0 auto;
   max-width: 992px;
 }
 
-/* line 21, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 a {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* line 26, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 a:hover {
   text-decoration: none;
   color: #ffffff;
 }
 
-/* line 31, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
-/* line 36, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header div:first-child {
   margin: 0 auto;
   text-align: center;
   padding: 5%;
 }
 
-/* line 42, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header ul {
   display: flex;
   justify-content: space-around;
@@ -44,7 +36,6 @@ header ul {
   margin: 0;
 }
 
-/* line 48, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header ul li {
   width: 100%;
   text-align: center;
@@ -54,35 +45,35 @@ header ul li {
   padding-bottom: 2%;
 }
 
-/* line 56, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header ul li a {
   text-decoration: none;
   color: #37474f;
+  display: inline-block;
+  width: 100%;
+  padding: 1em 0;
 }
 
-/* line 62, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header ul li:hover {
   background-color: #37474f;
 }
 
-/* line 65, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 header ul li:hover a {
   text-decoration: none;
   color: #ffffff;
+  display: inline-block;
+  width: 100%;
+  padding: 1em 0;
 }
 
-/* line 73, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top {
   display: flex;
   flex-direction: column;
 }
 
-/* line 77, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .title_article {
   margin: 3%;
 }
 
-/* line 81, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .tags {
   color: #ffffff;
   font-weight: lighter;
@@ -90,34 +81,28 @@ header ul li:hover a {
   margin-left: 3%;
 }
 
-/* line 88, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .article-left {
   background-color: #FF7043;
   color: #ffffff;
 }
 
-/* line 92, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .article-left div {
   padding: 3%;
 }
 
-/* line 97, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .article-right {
   display: flex;
   flex-direction: column;
 }
 
-/* line 101, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .article-right .article-right-1 {
   background-color: #C62828;
 }
 
-/* line 105, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-top .article-right .article-right-2 {
   background-color: #5C6BC0;
 }
 
-/* line 111, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-main {
   background-color: #E0E0E0;
   display: flex;
@@ -125,12 +110,10 @@ header ul li:hover a {
   padding: 5%;
 }
 
-/* line 117, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-main div {
   padding: 3%;
 }
 
-/* line 122, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-sidebar {
   display: flex;
   flex-direction: column;
@@ -138,23 +121,19 @@ header ul li:hover a {
   background-color: #F5F5F5;
 }
 
-/* line 128, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-sidebar form {
   display: flex;
   flex-direction: column;
 }
 
-/* line 132, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-sidebar form label {
   margin: 1%;
 }
 
-/* line 136, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-sidebar form input {
   margin: 1%;
 }
 
-/* line 140, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 .region-sidebar form input[type=submit] {
   background-color: #5C6BC0;
   border-radius: 2px;
@@ -165,35 +144,29 @@ header ul li:hover a {
   padding: 5px;
 }
 
-/* line 152, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
 footer {
   height: 50px;
   background-color: #000000;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 160, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   header {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
   }
-  /* line 165, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   header div:first-child {
     padding: 0;
     margin: 0;
   }
-  /* line 170, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   header div:last-child {
     width: 25%;
     height: 80px;
     line-height: 80px;
   }
-  /* line 179, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-left {
     position: relative;
   }
-  /* line 182, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-left div {
     background-color: #FF7043;
     width: 50%;
@@ -201,96 +174,74 @@ footer {
     bottom: 50px;
     left: 50px;
   }
-  /* line 191, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right {
     flex-direction: row;
   }
-  /* line 194, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right .article-right-1 {
     width: 50%;
   }
-  /* line 198, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right .article-right-2 {
     width: 50%;
   }
-  /* line 204, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-main {
     padding: 5% 20% 5% 20%;
   }
-  /* line 208, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-sidebar {
     padding: 5% 20% 5% 20%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  /* line 216, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top {
     flex-direction: row;
   }
-  /* line 219, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-left {
     position: relative;
     width: 70%;
   }
-  /* line 223, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-left img {
     height: 100%;
   }
-  /* line 228, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right {
     flex-direction: column;
     width: 30%;
   }
-  /* line 233, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right .article-right-1 {
     width: 100%;
   }
-  /* line 237, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-top .article-right .article-right-2 {
     width: 100%;
   }
-  /* line 243, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region_main_sidebar {
     display: flex;
     flex-direction: row;
   }
-  /* line 248, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-main {
     width: 70%;
     padding: 3% 0 3% 0;
   }
-  /* line 252, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-main article {
     display: flex;
     flex-direction: row;
   }
-  /* line 256, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-main article div:first-child {
     padding: 2% 0 2% 0;
     width: 70%;
   }
-  /* line 261, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-main article div:last-child {
     padding: 2%;
   }
-  /* line 267, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-sidebar {
     width: 30%;
     padding: 3%;
   }
-  /* line 273, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-sidebar form label {
     margin: 2%;
   }
-  /* line 277, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-sidebar form input {
     margin: 2%;
   }
-  /* line 281, ../César/Documents/MIW/Integration_2/github/tp_css_1/scss/style.scss */
   .region-sidebar form input[type=submit] {
     margin: 10% auto;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
